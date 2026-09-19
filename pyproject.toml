@@ -1,0 +1,31 @@
+[project]
+name = "driftzone"
+version = "1.0.0"
+description = "DriftZone - App de películas, series y anime (Flet)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "wolfspaceapp" }]
+dependencies = [
+    "flet==0.86.5",
+    "flet-video==0.86.5",
+    "flet-webview==0.86.5",
+]
+
+[tool.flet]
+# Nombre y organización de la app empaquetada
+org = "com.wolfspace"
+product = "DriftZone"
+company = "WolfSpace"
+copyright = "Copyright (c) 2026 WolfSpace"
+
+# Punto de entrada: main.py está en la raíz del proyecto
+[tool.flet.app]
+path = "."
+
+[tool.flet.android]
+# Nombre del paquete / applicationId del APK
+package = "com.wolfspace.driftzone"
+
+[build-system]
+requires = ["flet"]
+build-backend = "flet.build"

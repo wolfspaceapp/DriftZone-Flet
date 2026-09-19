@@ -1,0 +1,3 @@
+flet==0.86.5
+flet-video==0.86.5
+flet-webview==0.86.5
